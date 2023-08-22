@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,49 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-  <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="col-xl-1" id="iconoSE" src="assets/images/icono SE.png" alt=""> Software Education</a>
-      <div class="col-xl-3 col-8 navButton"><input id="search_bar" type="search" name="search" class="form-control" placeholder="Buscar..."></div>
+  
+  <div id="baranimation">
+    <div id="nav-neon"></div>
+      <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary " data-bs-theme="dark" style="z-index: 1;">
+          <div class="container-fluid">
+            <a class="navbar-brand col-xxl-1 col-xl-1 col-4" id="icon" href="#"><img id="iconoSE" src="assets/images/icono SE.png" alt=""> Software Education</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav nav-pills">
-          <a class="nav-link btn btn-primary navButton" href="#">inicio</a>
-          <a class="nav-link btn btn-primary navButton" href="#">Features</a>
-          <a class="nav-link btn btn-primary navButton" href="#">Pricing</a>
-          <a class="nav-link btn btn-primary navButton" href="#">Disabled</a>
-          <a class="nav-link btn btn-primary navButton" href="#">Disabled</a>
-        </div>
-      </div>
+            <div class="col-xl-4 col-8 navButton"><input id="search_bar" type="search" name="search" class="form-control" placeholder="Buscar..."></div>
+
+            <button class="navbar-toggler" style=" position: absolute; margin-left: 75%; margin-top: -12%;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+           <div class="collapse navbar-collapse col-xl-6 " id="navbarNavAltMarkup">
+              <div class="navbar-nav nav-pills">
+                <br>
+                <br>
+                <a class="nav-link btn btn-primary navButton col-xl-2 col-10" style="padding-top: 4%;" href="#">inicio</a>
+                <a class="nav-link btn btn-primary navButton col-xl-4 col-10" href="#">Cursos programacion</a>
+                <a class="nav-link btn btn-primary navButton col-xl-4 col-10" href="#">Cursos diseño grafico</a>
+                <a class="nav-link btn btn-primary navButton col-xl-2 col-10" style="padding-top: 4%;" href="#">Ayuda</a>
+          
+              </div>
+            </div>
+          </div>
+        </nav>
     </div>
-  </nav>
+  
+    <header>
+      <div class="tittle00">
+        <img class="tittleimg" id="tittleimg00" src="assets/images/bienvenido-a.png" alt="">
+        <img class="tittleimg" id="tittleimg01" src="assets/images/Software-education.png" alt="">
+      </div>
+    </header>
+    <div id="particles-js"></div>
 
-    <script src="scripts/bootstrap.bundle.min.js"></script>
-    <script src="scripts/cdnjs.cloudflare.com_ajax_libs_popper.js_2.9.1_umd_popper.min.js"></script>
-    <script src="scripts/code.jquery.com_jquery-3.6.0.min.js"></script>
-    <script src="scripts/dropdown-c.js"></script> <!--aqui va el script para el menu-->
+  <script src="/SOFTWARE EDUCATION/scripts/particles.min.js"></script>
+  <script src="/SOFTWARE EDUCATION/scripts/particclesapp.js"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/cdnjs.cloudflare.com_ajax_libs_popper.js_2.9.1_umd_popper.min.js"></script>
+  <script src="scripts/code.jquery.com_jquery-3.6.0.min.js"></script>
+  <script src="scripts/dropdown-c.js"></script> <!--aqui va el script para el menu-->
 </body>
 </html>
 
