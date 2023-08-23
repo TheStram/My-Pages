@@ -85,6 +85,25 @@ body{
     position: relative;
     margin-left: 9%;
     margin-top: 30%;
+    opacity: 75%;
+}
+
+#searchtittle0{
+    border-color:rgba(0, 255, 255, 0.411) ;
+    border-width: 3px;
+    animation: search02 2s ;
+}
+
+#searchtittle0:hover{
+    border-color:aqua;
+    border-width: 3px;
+    transition-duration: 500ms;
+}
+
+@keyframes search02 {
+    0%{width: 0%; opacity: 0%;}
+    50%{width: 0%; opacity: 0%;}
+    100%{width: 100%; opacity: 100%;}
 }
 
 @keyframes img1 {
