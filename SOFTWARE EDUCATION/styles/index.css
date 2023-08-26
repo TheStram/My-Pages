@@ -100,6 +100,18 @@ body{
     transition-duration: 500ms;
 }
 
+#boxcurs{
+    text-align: justify;
+    background-color: #1c1c1d;
+    margin: 0.5%;
+    width: 32.1%;
+}
+
+.imgboxcurs{
+    width: 100%;
+    border-radius: 10px;
+}
+
 @keyframes search02 {
     0%{width: 0%; opacity: 0%;}
     50%{width: 0%; opacity: 0%;}
