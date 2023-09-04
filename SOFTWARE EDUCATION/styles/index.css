@@ -1,12 +1,175 @@
+@font-face {
+    font-family: Affirmative-Italic;
+    src: url(../assets/fonts/Affirmative\ Italic.otf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Affirmative;
+    src: url(../assets/fonts/Affirmative.otf);
+    font-style: normal;
+}
+
 body{
     background: #12101D;
 }
 
+#particles-js{
+    position: fixed;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+}
+
 #iconoSE{
-    width: 10%;
+    width: 60%;
     margin-top: 0.4%;
 }
 
 .navButton{
-    padding-left: -20%;
+    padding-left: 5%;
+}
+
+#search_bar{
+    margin-left: 18%;
+    width: 100%;
+}
+
+#navbarNavAltMarkup{
+    padding-left: 20%;
+}
+
+#navboton{
+    padding-left: 50%;
+}
+
+#nav-neon{
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    height: 160px;
+    margin-top: -4.8%;
+    filter: blur(7px);
+    z-index: -1;
+    animation-name: neonbar;
+    animation-duration: 2s;
+}
+
+.tittle00{
+    position: relative;
+   
+}
+.tittleimg{
+    position: absolute;
+    
+}
+
+#tittleimg00{
+    width: 100%;
+    animation-name: img1;
+    animation-duration: 2s;
+}
+
+#tittleimg01{
+    margin-top: 11%;
+    width: 100%;
+    animation-name: img2;
+    animation-duration: 2s;
+}
+
+#baranimation{
+    animation-name: bar;
+    animation-duration: 1s;
+}
+
+#searchtittle{
+    position: relative;
+    margin-left: 9%;
+    margin-top: 30%;
+    opacity: 75%;
+}
+
+#searchtittle0{
+    border-color:rgba(0, 255, 255, 0.411) ;
+    border-width: 3px;
+    animation: search02 2s ;
+}
+
+#searchtittle0:hover{
+    border-color:aqua;
+    border-width: 3px;
+    transition-duration: 500ms;
+}
+
+
+
+
+/*
+#boxcurs{
+    text-align: justify;
+    background-color: #1c1c1d;
+    margin: 0.5%;
+    
+}
+
+.imgboxcurs{
+    width: 100%;
+    border-radius: 10px;
+}
+*/
+
+@keyframes search02 {
+    0%{width: 0%; opacity: 0%;}
+    50%{width: 0%; opacity: 0%;}
+    100%{width: 100%; opacity: 100%;}
+}
+
+@keyframes img1 {
+    0%{
+        opacity: 0%;
+        margin-left: 50%;
+    }
+    50%{
+        opacity: 0%;
+        margin-left: 50%;
+    }
+    100%{
+        opacity: 100%;
+        margin-left: 0%;
+    }
+}
+
+@keyframes img2 {
+    0%{
+        opacity: 0%;
+        margin-left: -50%;
+    }
+    50%{
+        opacity: 0%;
+        margin-left: -50%;
+    }
+    100%{
+        opacity: 100%;
+        margin-left: 0%;
+    }
+}
+
+@keyframes bar {
+    0%{
+        margin-top: -6.5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+@keyframes neonbar {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
