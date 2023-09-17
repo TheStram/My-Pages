@@ -100,8 +100,66 @@ body{
     transition-duration: 500ms;
 }
 
+#slide-container{
+    position: relative;
+}
+
+#slides-cursos{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.slides-blocks,
+.slides-blur{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.slides-blocks{
+    z-index: 2;
+    margin-top: -150%;
+}
+
+.slides-blur{
+    z-index: 1;
+    filter: blur(25px);
+}
+.icon-slides{
+    position: relative;
+    margin-top: -165%;
+    z-index: 4;
+}
 
 
+#slide-layer{
+    opacity: 70%;
+    filter: saturate(40%);
+    filter: brightness(70%);
+    filter: contrast(70%);
+}
+
+#slide-layer:hover{
+    opacity: 100%;
+    filter: saturate(100%);
+    filter: brightness(200%);
+    filter: contrast(200%);
+    transition-duration: 600ms;
+}
+
+#icon-book{
+    width: 65%;
+    margin-left: 16.5%;
+}
+#icon-prog{
+    width: 55%;
+    margin-left: 22%;
+}
+#icon-pc{
+    width: 50%;
+    margin-left: 24%;
+}
 
 /*
 #boxcurs{
