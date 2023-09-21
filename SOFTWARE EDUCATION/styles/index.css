@@ -1,11 +1,12 @@
+
 @font-face {
-    font-family: Affirmative-Italic;
-    src: url(../assets/fonts/Affirmative\ Italic.otf);
-    font-style: italic;
+    font-family: CaviarDreams;
+    src: url(../assets/fonts/CaviarDreams.ttf);
+    font-style: normal;
 }
 @font-face {
-    font-family: Affirmative;
-    src: url(../assets/fonts/Affirmative.otf);
+    font-family: CaviarDreams_Bold;
+    src: url(../assets/fonts/CaviarDreams_Bold.ttf);
     font-style: normal;
 }
 
@@ -98,6 +99,16 @@ body{
     border-color:aqua;
     border-width: 3px;
     transition-duration: 500ms;
+}
+
+#slog-tex{
+    color: #fd9ccc;
+    font-family: CaviarDreams_Bold;
+    text-shadow: 0px 0px 5px #ff0080,
+                 0px 0px 5px #ff0080,
+                 0px 0px 10px #ff0080,
+                 0px 0px 15px #ff0080,
+                 0px 0px 20px #ff0080;
 }
 
 #slide-container{
