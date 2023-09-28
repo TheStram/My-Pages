@@ -1,42 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido a S.E</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
-<body>
-    <header class="p-3 text-bg-dark" id="bar_sup">
-        <div id="neon_nav"></div>
-        <div class="row">
-        <img class="col-xl-1 col-3" src="assets/images/icono SE.png" id="icono_se"  >
-        <div class="col-xl-3 col-8"><input id="search_bar" type="search" name="search" class="form-control" placeholder="Buscar..."></div>
-        <div class="col-xl-7 col-8" style="margin-top: 0.4%;">
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Cursos programacion</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Cursos Diseño grafico</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Aplicacion de escritorio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Ayuda</a></li>
-          </ul>
-      </div>          
-        <!-- <a class="col-xl-2" href="" >cursos en programacion</a>
-        <a class="col-xl-1" href="">cursos en Diseño grafico</a>
-        <a class="col-xl-1" href="">uso de herramientas digitales</a> -->
-        </div>
-    </header>
 
-      
-    <div class="row">
-      
+<body>
+<div id="particles-js"></div>
+<header>
+  <div id="baranimation">
+    <div id="nav-neon"></div>
+      <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary " data-bs-theme="dark" style="z-index: 1;">
+          <div class="container-fluid">
+            <a class="navbar-brand col-xxl-1 col-xl-1 col-4" id="icon" href="#"><img id="iconoSE" src="assets/images/icono SE.png" alt=""> Software Education</a>
+
+            <div class="col-xl-4 col-8 navButton"><input id="search_bar" type="search" name="search" class="form-control" placeholder="Buscar..."></div>
+
+            <button class="navbar-toggler" style=" position: absolute; margin-left: 75%; margin-top: -12%;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+           <div class="collapse navbar-collapse col-xl-6 " id="navbarNavAltMarkup">
+              <div class="navbar-nav nav-pills">
+                <br>
+                <br>
+                <a class="nav-link btn btn-primary navButton col-xl-2 col-10" style="padding-top: 4%;" href="#">inicio</a>
+                <a class="nav-link btn btn-primary navButton col-xl-4 col-10" style="padding-top: 4%;" href="#">Cursos L.M.C.S.I</a>
+                <a class="nav-link btn btn-primary navButton col-xl-4 col-10" href="#">Cursos programacion</a>
+                <a class="nav-link btn btn-primary navButton col-xl-2 col-10" style="padding-top: 4%;" href="#">Ayuda</a>
+          
+              </div>
+            </div>
+          </div>
+        </nav>
     </div>
+      <div class="tittle00 col-12 col-xl-12">
+        <img class="tittleimg" id="tittleimg00" src="assets/images/bienvenido-a.png" alt="">
+        <img class="tittleimg" id="tittleimg01" src="assets/images/Software-education.png" alt="">
+      </div>
+        
+      <!--El arte de enseñar es el arte de ayudar a descubrir 
+          El futuro depende de lo que hagas hoy
+          Tu mejor aventura comienza aqui -->
+
+
+
+    </header>
     
-    <script src="scripts/cdnjs.cloudflare.com_ajax_libs_popper.js_2.9.1_umd_popper.min.js"></script>
-    <script src="scripts/code.jquery.com_jquery-3.6.0.min.js"></script>
-    <script src="scripts/dropdown-c.js"></script> <!--aqui va el script para el menu-->
+
+    <div class="col-xl-10 col-10" id="searchtittle">
+        <input id="searchtittle0" class="form-control" data-bs-theme="dark" type="search" placeholder="Buscar..." aria-label="Search" style="position: relative;">
+      </div>
+
+      <br><br>
+      <center><h3 id="slog-tex">El arte de enseñar es el arte de ayudar a descubrir </h3></center>
+
+    <div class="container" id="slides-cursos">
+      <div class="row" id="slide-container">
+
+          <div id="slide-layer" class="col-xl-4 col-12" style="position: relative;">
+            <a href="pages/Lmcsi/Lmcsi.html"> 
+            <img class="slides-blur" id="blur-book" src="assets/images/slides-home-page/slide LMCSI.png" alt="">
+            <img class="slides-blocks" src="assets/images/slides-home-page/slide LMCSI.png" alt="">
+            <img class="icon-slides" id="icon-book" src="assets/images/slides-home-page/icon LMCSI.png" alt="">
+            </a>
+          </div>
+
+          <div id="slide-layer" class="col-xl-4 col-12" style="position: relative;">
+          <a href="pages/programing/programing.html">
+            <img  class="slides-blur" id="blur-prog" src="assets/images/slides-home-page/Slide programing.png" alt="">
+            <img  class="slides-blocks" src="assets/images/slides-home-page/Slide programing.png" alt="">
+            <img class="icon-slides" id="icon-prog" src="assets/images/slides-home-page/icon programing.png" alt="">
+          </a>
+          </div>
+
+          <div id="slide-layer" class="col-xl-4 col-12" style="position: relative;">
+          <a href="pages/desk-app/desk-app.html">
+            <img  class="slides-blur" id="blur-pc" src="assets/images/slides-home-page/slide desktop app.png" alt="">
+            <img  class="slides-blocks" src="assets/images/slides-home-page/slide desktop app.png" alt="">
+            <img class="icon-slides" id="icon-pc" src="assets/images/slides-home-page/icon desktop app.png" alt="">
+          </a>
+          </div>
+
+      </div>
+    </div>
+
+  <script src="scripts/particles.min.js"></script>
+  <script src="scripts/particclesapp.js"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/cdnjs.cloudflare.com_ajax_libs_popper.js_2.9.1_umd_popper.min.js"></script>
+  <script src="scripts/code.jquery.com_jquery-3.6.0.min.js"></script>
+  <script src="scripts/dropdown-c.js"></script> <!--aqui va el script para el menu-->
 </body>
 </html>
 
