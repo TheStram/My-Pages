@@ -1,11 +1,12 @@
+
 @font-face {
-    font-family: Affirmative-Italic;
-    src: url(../assets/fonts/Affirmative\ Italic.otf);
-    font-style: italic;
+    font-family: CaviarDreams;
+    src: url(../assets/fonts/CaviarDreams.ttf);
+    font-style: normal;
 }
 @font-face {
-    font-family: Affirmative;
-    src: url(../assets/fonts/Affirmative.otf);
+    font-family: CaviarDreams_Bold;
+    src: url(../assets/fonts/CaviarDreams_Bold.ttf);
     font-style: normal;
 }
 
@@ -100,8 +101,76 @@ body{
     transition-duration: 500ms;
 }
 
+#slog-tex{
+    color: #fd9ccc;
+    font-family: CaviarDreams_Bold;
+    text-shadow: 0px 0px 5px #ff0080,
+                 0px 0px 5px #ff0080,
+                 0px 0px 10px #ff0080,
+                 0px 0px 15px #ff0080,
+                 0px 0px 20px #ff0080;
+}
+
+#slide-container{
+    position: relative;
+}
+
+#slides-cursos{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.slides-blocks,
+.slides-blur{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.slides-blocks{
+    z-index: 2;
+    margin-top: -150%;
+}
+
+.slides-blur{
+    z-index: 1;
+    filter: blur(25px);
+}
+.icon-slides{
+    position: relative;
+    margin-top: -165%;
+    z-index: 4;
+}
 
 
+#slide-layer{
+    opacity: 70%;
+    filter: saturate(40%);
+    filter: brightness(70%);
+    filter: contrast(70%);
+}
+
+#slide-layer:hover{
+    opacity: 100%;
+    filter: saturate(100%);
+    filter: brightness(200%);
+    filter: contrast(200%);
+    transition-duration: 600ms;
+}
+
+#icon-book{
+    width: 65%;
+    margin-left: 16.5%;
+}
+#icon-prog{
+    width: 55%;
+    margin-left: 22%;
+}
+#icon-pc{
+    width: 50%;
+    margin-left: 24%;
+}
 
 /*
 #boxcurs{
