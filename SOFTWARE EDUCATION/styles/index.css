@@ -1,126 +1,241 @@
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../assets/fonts/CaviarDreams.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: CaviarDreams_Bold;
+    src: url(../assets/fonts/CaviarDreams_Bold.ttf);
+    font-style: normal;
+}
+
 body{
     background: #12101D;
 }
-#icono_se{
-   margin-top: -0.7%; 
-}
-#bar_sup{
-    position: relative;
-    margin-top: 0%;
-    animation-name: bar_sup;
-    animation-duration: 1s;
-    
-    /*para ponerle efecto neon*/
-   /* box-shadow: 0px 1px 2px rgba(0,255,255,0.5), 
-              0px 2px 4px rgba(0,255,255,0.5), 
-              0px 4px 8px rgba(0,255,255,0.5), 
-              0px 8px 16px rgba(0,255,255,0.5); */
+
+#particles-js{
+    position: fixed;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
 }
 
-#neon_nav{
-    position: absolute;
-    height: 90px;
-    width: 100%;
-    background-color: aqua;
-    right: 0.05%;
-    bottom: 0.9%;
-    z-index: -1;
-    box-shadow: 0px 1px 2px rgba(0,255,255,0.5), 
-              0px 2px 4px rgba(0,255,255,0.5), 
-              0px 4px 8px rgba(0,255,255,0.5), 
-              0px 8px 16px rgba(0,255,255,0.5);
-    animation-name: glow;
-    animation-duration: 3s;
-    /*-webkit-animation-name: glow2;
-    -webkit-animation-duration: 9s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 1.5s; */
+#iconoSE{
+    width: 60%;
+    margin-top: 0.4%;
+}
+
+.navButton{
+    padding-left: 5%;
 }
 
 #search_bar{
-    margin-top: 2%;
-    height: 40px;
-    border-radius: 10px;
-    animation-name: bar_search;
-    animation-duration: 1s;
+    margin-left: 18%;
+    width: 100%;
+}
+
+#navbarNavAltMarkup{
+    padding-left: 20%;
+}
+
+#navboton{
+    padding-left: 50%;
+}
+
+#nav-neon{
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    height: 160px;
+    margin-top: -4.8%;
+    filter: blur(7px);
+    z-index: -1;
+    animation-name: neonbar;
+    animation-duration: 2s;
+}
+
+.tittle00{
+    position: relative;
+   
+}
+.tittleimg{
+    position: absolute;
     
 }
 
-#tittle00{
-    color: azure; 
-    text-align: center;
+#tittleimg00{
+    width: 100%;
+    animation-name: img1;
+    animation-duration: 2s;
 }
 
-#search_bar01{
-    margin-top: 2%;
-    height: 40px;
+#tittleimg01{
+    margin-top: 11%;
+    width: 100%;
+    animation-name: img2;
+    animation-duration: 2s;
+}
+
+#baranimation{
+    animation-name: bar;
+    animation-duration: 1s;
+}
+
+#searchtittle{
+    position: relative;
+    margin-left: 9%;
+    margin-top: 30%;
+    opacity: 75%;
+}
+
+#searchtittle0{
+    border-color:rgba(0, 255, 255, 0.411) ;
+    border-width: 3px;
+    animation: search02 2s ;
+}
+
+#searchtittle0:hover{
+    border-color:aqua;
+    border-width: 3px;
+    transition-duration: 500ms;
+}
+
+#slog-tex{
+    color: #fd9ccc;
+    font-family: CaviarDreams_Bold;
+    text-shadow: 0px 0px 5px #ff0080,
+                 0px 0px 5px #ff0080,
+                 0px 0px 10px #ff0080,
+                 0px 0px 15px #ff0080,
+                 0px 0px 20px #ff0080;
+}
+
+#slide-container{
+    position: relative;
+}
+
+#slides-cursos{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.slides-blocks,
+.slides-blur{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.slides-blocks{
+    z-index: 2;
+    margin-top: -150%;
+}
+
+.slides-blur{
+    z-index: 1;
+    filter: blur(25px);
+}
+.icon-slides{
+    position: relative;
+    margin-top: -165%;
+    z-index: 4;
+}
+
+
+#slide-layer{
+    opacity: 70%;
+    filter: saturate(40%);
+    filter: brightness(70%);
+    filter: contrast(70%);
+}
+
+#slide-layer:hover{
+    opacity: 100%;
+    filter: saturate(100%);
+    filter: brightness(200%);
+    filter: contrast(200%);
+    transition-duration: 600ms;
+}
+
+#icon-book{
+    width: 65%;
+    margin-left: 16.5%;
+}
+#icon-prog{
+    width: 55%;
+    margin-left: 22%;
+}
+#icon-pc{
+    width: 50%;
+    margin-left: 24%;
+}
+
+/*
+#boxcurs{
+    text-align: justify;
+    background-color: #1c1c1d;
+    margin: 0.5%;
+    
+}
+
+.imgboxcurs{
+    width: 100%;
     border-radius: 10px;
-    animation-name: bar_search;
-    animation-duration: 1s;  
+}
+*/
+
+@keyframes search02 {
+    0%{width: 0%; opacity: 0%;}
+    50%{width: 0%; opacity: 0%;}
+    100%{width: 100%; opacity: 100%;}
 }
 
-@keyframes bar_sup {
+@keyframes img1 {
     0%{
-        margin-top: -9%;
+        opacity: 0%;
+        margin-left: 50%;
+    }
+    50%{
+        opacity: 0%;
+        margin-left: 50%;
+    }
+    100%{
+        opacity: 100%;
+        margin-left: 0%;
+    }
+}
+
+@keyframes img2 {
+    0%{
+        opacity: 0%;
+        margin-left: -50%;
+    }
+    50%{
+        opacity: 0%;
+        margin-left: -50%;
+    }
+    100%{
+        opacity: 100%;
+        margin-left: 0%;
+    }
+}
+
+@keyframes bar {
+    0%{
+        margin-top: -6.5%;
     }
     100%{
         margin-top: 0%;
     }
 }
-@keyframes bar_search {
-    0%{
-        opacity: 0%;
-        width: 0px;
-    }
-    100%{
-        opacity: 100%;
-        width: 100%;
-    }
-}
-/*@-webkit-keyframes glow2 {
-    0%{
-        box-shadow: 0px 1px 2px rgba(0,204,255,0.5), 
-        0px 2px 4px rgba(0,204,255,0.5), 
-        0px 4px 8px rgba(0,204,255,0.5), 
-        0px 8px 16px rgba(0,204,255,0.5);  
-    }
-    20%{
-        box-shadow: 0px 1px 2px rgba(254, 1, 154,0.5), 
-        0px 2px 4px rgba(254, 1, 154,0.5), 
-        0px 4px 8px rgba(254, 1, 154,0.5), 
-        0px 8px 16px rgba(254, 1, 154,0.5);  
-    }
-    40%{
-        box-shadow: 0px 1px 2px rgba(225, 188, 41,0.5), 
-        0px 2px 4px rgba(225, 188, 41,0.5), 
-        0px 4px 8px rgba(225, 188, 41,0.5), 
-        0px 8px 16px rgba(225, 188, 41,0.5);  
-    }
-    60%{
-        box-shadow: 0px 1px 2px rgba(0,255,255,0.5), 
-        0px 2px 4px rgba(0,255,255,0.5), 
-        0px 4px 8px rgba(0,255,255,0.5), 
-        0px 8px 16px rgba(0,255,255,0.5);  
-    }
-    80%{
-        box-shadow: 0px 1px 2px rgba(254, 1, 154,0.5), 
-        0px 2px 4px rgba(254, 1, 154,0.5), 
-        0px 4px 8px rgba(254, 1, 154,0.5), 
-        0px 8px 16px rgba(254, 1, 154,0.5);  
-    }
-    100%{
-        box-shadow: 0px 1px 2px rgba(0,204,255,0.5), 
-        0px 2px 4px rgba(0,204,255,0.5), 
-        0px 4px 8px rgba(0,204,255,0.5), 
-        0px 8px 16px rgba(0,204,255,0.5); 
-    }
-} */
 
-@keyframes glow {
+@keyframes neonbar {
     0%{
         width: 0%;
     }
-    30%{
+    50%{
         width: 0%;
     }
     100%{
