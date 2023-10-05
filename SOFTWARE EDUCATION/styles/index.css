@@ -36,7 +36,7 @@ body{
 }
 
 #navbarNavAltMarkup{
-    padding-left: 20%;
+    padding-left: 16%;
 }
 
 #navboton{
@@ -109,6 +109,12 @@ body{
                  0px 0px 10px #ff0080,
                  0px 0px 15px #ff0080,
                  0px 0px 20px #ff0080;
+    animation-name: slogtext;
+    animation-duration: 3s;
+}
+
+@keyframes slogtext {
+    0%{}
 }
 
 #slide-container{
