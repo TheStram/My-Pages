@@ -1,0 +1,136 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../assets/fonts/CaviarDreams.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: CaviarDreams_Bold;
+    src: url(../assets/fonts/CaviarDreams_Bold.ttf);
+    font-style: normal;
+}
+
+body{
+    background: #101d13;
+}
+
+#particles-js{
+    position: fixed;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+}
+
+#iconoSE{
+    width: 60%;
+    margin-top: 0.4%;
+}
+
+.navButton{
+    padding-left: 5%;
+}
+
+#search_bar{
+    margin-left: 18%;
+    width: 100%;
+}
+
+#navbarNavAltMarkup{
+    padding-left: 15%;
+}
+
+#navboton{
+    padding-left: 50%;
+}
+
+.btn{
+    transition: 0.5s;
+    width: 25%;
+}
+.btn:hover{
+    width: 27%;
+}
+
+#nav-neon{
+    position: absolute;
+    background-color: rgb(0, 255, 247);
+    width: 100%;
+    height: 160px;
+    margin-top: -4.8%;
+    filter: blur(7px);
+    z-index: -1;
+    animation-name: neonbar;
+    animation-duration: 2s;
+}
+
+#baranimation{
+    animation-name: bar;
+    animation-duration: 1s;
+}
+
+/* desde aqui empezamos lmcsi*/
+
+#box-ico{
+    position: relative;
+    background-color:rgb(0, 255, 247);
+    margin-top: 5%;
+    z-index: -2;
+    opacity: 75%;
+    border-radius: 50px;
+    animation-name: desk;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+#ico{
+    position: relative;
+    width:20%;
+    align-items: center;
+    margin-left: 37%;
+    margin-top: 5%;
+}
+
+#text001{
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 150%;
+    font-family: CaviarDreams_Bold;
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes desk {
+    0%{
+        opacity: 0%;
+        margin-top:10%;
+    }
+    50%{
+        opacity: 0%;
+        margin-top:10%;
+    }
+    100%{
+        opacity: 75%;
+        margin-top:5%;
+    }
+}
+
+@keyframes bar {
+    0%{
+        margin-top: -6.5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+@keyframes neonbar {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+

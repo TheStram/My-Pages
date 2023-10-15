@@ -35,11 +35,19 @@ body{
 }
 
 #navbarNavAltMarkup{
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 #navboton{
     padding-left: 50%;
+}
+
+.btn{
+    transition: 0.5s;
+    width: 25%;
+}
+.btn:hover{
+    width: 27%;
 }
 
 #nav-neon{
@@ -108,7 +116,39 @@ body{
 }
 
 #text001{
+    position: relative;
+    top: -5%;
     font-size: 125%;
+}
+
+#curs_blks{
+    position: relative;
+    margin-top: 3%;
+}
+
+.box_cur{
+    background-color: rgb(27, 27, 27);
+    opacity: 75%;
+    margin: 1%;
+    width: 31%;
+    color: #ffee00;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(1px);
+}
+
+.img_curs{
+    width: 90%;
+    margin: 5%;
+    margin-top: 8%;
+    border-radius: 15px;
+}
+
+.box_cur:hover{
+    opacity: 100%;
+    filter: brightness(125%);
+    width: 32%;
+    filter: blur(0px);
 }
 
 @keyframes bar {
